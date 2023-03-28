@@ -6,3 +6,36 @@
 html,body{
     height:100%
 }
+
+/*
+    HEADER
+*/
+div.header{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.menu{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.menu .items{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#item-circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:1px solid black
+}
