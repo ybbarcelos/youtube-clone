@@ -97,6 +97,8 @@ div.header{
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
 .video{
@@ -104,4 +106,34 @@ div.header{
     flex-direction:column;
     max-width:300px;
     height:auto;
+}
+
+.video_title{
+    width:100%;
+    height:auto;
+    display:flex;
+    padding:10px;
+    gap:10px;
+}
+
+.video_title .text{
+    display:flex;
+    flex-direction:column;
+}
+
+#name_channel{
+    font-weight:500;
+    margin-bottom:6px;
+}
+
+.video_title .text a{
+    text-decoration:none;
+    color:black;
+}
+
+.video_title .circle{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background-color: #ccc;
 }
