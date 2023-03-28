@@ -12,6 +12,9 @@ html,body{
 */
 div.header{
     width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ccc;
     height:auto;
     display:flex;
     justify-content:center;
@@ -25,17 +28,80 @@ div.header{
     display:flex;
     justify-content:space-around;
     align-items:center;
+    flex-wrap:wrap;
 }
 
-.menu .items{
+.search{
+    display:flex;
+    width:50%;
+}
+
+.search input[type="search"]{
+    width:100%;
+    padding:10px 20px
+}
+
+.search button{
+    width:10%;
+}
+
+.items{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.items div a{
+   text-decoration:none;
+}
+
+.items div a img{
+    width:30px;
+ }
+ 
+#item-circle{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:1px solid black
+}
+
+.tags {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    width:100%;
+    height:auto;
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.tags a {
+    text-decoration:none;
+    padding:10px;
+    background-color:#e7e7e7;
+    border-radius:900px;
+    color:black;
+}
+
+.tags a:hover{
+    background-color:#606060;
+    color:#fff;
+}
+/*
+    VIDEOS
+*/
+.videos{
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-#item-circle{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    border:1px solid black
+.video{
+    display:flex;
+    flex-direction:column;
+    max-width:300px;
+    height:auto;
 }
